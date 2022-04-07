@@ -1,0 +1,614 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #62ac04;
+    border-bottom: solid #497a0a;
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.nav_caja{
+    display: flex;
+    padding-right: 20px;
+}
+.nav_items{
+    display: flex;
+    list-style: none;
+    margin: 0 15px;
+    padding: 5px;
+}
+.nav_items li{
+    padding: 0 5px;
+}
+.nav_items a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    padding: 5px;
+}
+.nav_items a:hover{
+    text-decoration: underline rgb(207, 207, 207) 3px;
+    background-color: rgba(0, 0, 0, .3);
+    transition: .3s;
+
+}
+.logo_nav{
+    margin: 5px;
+    padding: 5px;
+}
+.logo_imagen{
+    width: 50px;
+    height: 50px;
+}
+/* RESPONSIVE MENU */
+@media screen and (max-width:768px){
+
+    header{
+        flex-direction: column;
+    }
+    .nav_items{
+        flex-direction: column;
+    }
+    .nav_items li{
+        text-align: center;
+        margin: 5px;
+    }
+    .nav_items a{
+        text-align: center;
+        font-size: 30px;
+    }
+    footer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .redes{
+        padding: 10px;
+    }
+}
+/* MENU DE NAVEGACION */
+
+body{
+    background-color: #945c962a;
+}
+
+/* BANNER PRINCIPAL */
+.caja_banner{
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align:center;
+}
+.banner_movil{
+    display: none;
+}
+.banner{
+    height: 344px;
+}
+
+@media screen and (max-width:768px){
+    .banner{
+        display: none;
+    }
+    .banner_movil{
+        display: block;
+        height: 600px;  
+    }
+    .caja_banner{
+       display:flex;
+       justify-content: center;
+       padding: 20px;
+       margin: 20px;
+       box-sizing: border-box;
+    }
+}
+/* BANNER PRINCIPAL */
+
+/* TITULOS */
+h1{
+    font-size: 35px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 20px;
+    border: groove rgb(120, 128, 122);
+    color: #f0f3f7;
+    font-weight: 100;
+    display: block;
+    text-align: center;
+    background-color: #62ac04;
+    padding: 20px;
+}
+
+.marcas_titulo{
+    font-size: 35px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 20px;
+    border: groove rgb(120, 128, 122);
+    color: #f0f3f7;
+    font-weight: 100;
+    display: block;
+    text-align: center;
+    background-color: #62ac04;
+    padding: 20px;
+}
+
+.titulo_pagos{
+    font-size: 35px;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 20px;
+    border: groove rgb(120, 128, 122);
+    color: #f0f3f7;
+    font-weight: 100;
+    display: block;
+    text-align: center;
+    background-color: #62ac04;
+    padding: 20px;
+}
+/* TITULOS */
+
+
+/* HORARIOS UBICACION Y MEDIOS DE PAGO */
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 430px);
+    gap: 10px;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.grid_item{
+    border-radius: 20px;
+    border: groove rgb(120, 128, 122);
+    background-color: #558c0d;
+    padding: 15px;
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+.horarios_item{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.horarios_item p{
+    font-size: 25px;
+    margin: 20px;
+    color: #f0f3f7;
+    font-weight: 100;
+    padding: 20px;
+}
+.grid_item .pagos_img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.map{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+/* HORARIOS UBICACION Y MEDIOS DE PAGO */
+
+/* PIE DE PAGINA-FOOTER */
+footer{
+    background-color: #62ac04;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+    color: azure;
+}
+.copy{
+    text-align: center;
+    padding-top: 10px;
+    color: #f0f3f7;
+    font-weight: 100;
+}
+
+.redes{
+    display: block;
+    text-align: center;
+}
+/* PIE DE PAGINA-FOOTER */
+
+/* PAGINA GALERIA */
+.trabajos_terminados{
+    font-size: 30px;
+    border-radius: 20px;
+    margin: 20px;
+    border: groove rgb(120, 128, 122);
+    color: #f0f3f7;
+    font-weight: 100;
+    text-align: center;
+    background-color: #62ac04;
+    padding: 20px;
+}
+
+.galeria_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 380px;
+    padding: 10px;
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
+
+.galleria_item{
+    border: solid rgb(7, 7, 7) 5px;
+    border-radius: 10px;
+}
+
+.galleria_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galleria_item:nth-child(1){
+    grid-column-start: span 2;   
+}
+
+.galleria_item:nth-child(3){
+    grid-column-start: span 2;
+}
+
+.galleria_item:nth-child(5){
+    grid-column-start: span 2;
+}
+
+.galleria_item:nth-child(4){
+    grid-row: span 2;
+}
+
+.body_galeria{
+    background-color: #dfb838;
+}
+
+@media screen and (max-width:768px){
+    .galeria_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .galleria_item:nth-child(1){
+        grid-column-start: span 1;   
+    }
+    
+    .galleria_item:nth-child(3){
+        grid-column-start: span 1;
+    }
+    
+    .galleria_item:nth-child(5){
+        grid-column-start: span 1;
+    }
+    
+    .galleria_item:nth-child(4){
+        grid-row: span 1;
+    }
+}
+
+/* PAGINA GALERIA */
+
+/* PAGINA DE CONTACTO */
+.flex_container_contacto{
+    display: flex;
+    padding: 10px;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.encabezado_contacto{
+    font-size: 15px;
+    display: block;
+    border-radius: 20px;
+    margin: 12px;
+    border: groove rgb(120, 128, 122);
+    color: #f0f3f7;
+    font-weight: 100;
+    text-align: center;
+    background-color: #62ac04;
+    padding: 10px;
+}
+.encabezado_contacto div p{
+    font-size: 18px;
+}
+ .form_container  { 
+    color: rgb(247, 247, 247);
+    width: 45%;
+}
+.form_container .form{
+    background: rgba(0, 0, 0,.6);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 15px 35px;
+}
+.form_container .form .form_label{
+    display: block;
+    color: #ff851b;
+    font-size: 16px;
+    position: relative;
+}
+.form_container .form .form_input, .form_textarea{
+   background: rgba(205, 209, 203, 0.7); 
+   border: none;
+   outline: none;
+   border-bottom: 2px solid #ff851b;
+   width: 100%;
+   padding: 12px;
+   margin-bottom: 20px;
+   border-radius: 2px;
+   font-size: 14px;
+   color: white;
+}
+.flex_container_contacto .boton{
+    width: 100%;
+    outline: none;
+    background: #ff851b;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 14px 0;
+    cursor: pointer;
+}
+.banner_contacto{
+    padding: 10px 10px;
+    height: 550px;
+}
+.banner_contacto img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:768px){
+    .flex_container_contacto{
+        flex-direction: column;
+    }
+    .form_container{
+        width: 100%;
+    }
+    .banner_contacto {
+        width: 80%;
+        height: 80%;
+    }
+    .banner_contacto img{
+        margin-left: 50px;
+    }
+}
+/* PAGINA DE CONTACTO */
+
+/* PAGINA DE PRODUCTOS */
+.productos_flex_container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+.productos_caja{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.productos_menu{
+    background-color: #2d8a09;
+    padding: 20px;
+    width: 250px;
+    height: 400px;
+    border-radius: 20px;
+}
+.menu_item ul{
+    background-color: #2d8a09;
+    display: flex;
+    flex-direction: column;
+}
+.menu_item li{
+    padding-top: 20px;
+    list-style-type: none;
+    border-bottom: #cbcdd1 solid 1px;
+}
+.menu_item li a{
+    text-decoration: none;
+    color: rgb(223, 219, 219);
+    font-size: 23px;
+    padding: 5px
+}
+.procesador_container{
+    background-color: #fefefe;
+    display: flex;
+    border-radius: 20px;
+    width: 500px;
+    height: 200px;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-left: 10px;
+}
+.info_item{
+    text-align: center;
+    /* border: solid orangered; */
+    width: 300px;
+    height: 200px;
+}
+.info_item h3{
+    padding: 10px 10px;
+    font-size: 16px;
+}
+.precio{
+    font-size: 20px;
+    padding: 10px 10px;
+    margin: 0 auto;
+    color: #4675b9;
+}
+.contenedor_comprar{
+    text-align: center;
+}
+.comprar{
+    width: 80%;
+    outline: none;
+    background: #2d8a09;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.procesador_item{
+    /* border: solid blue; */
+    width: 200px;
+    height: 200px;
+}
+.procesador_item img{
+    margin-top: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:768px) {
+ 
+    .productos_flex_container{
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .productos_menu{
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    .productos_caja{
+        margin: 15px;
+        align-items: center;
+        text-align: center;
+    }
+    .procesador_container{
+        margin: 0 auto;
+        width: 410px;
+    }
+}
+
+/* PAGINA SOBRE NOSOTROS */
+
+.nosotros_conteiner{
+    display: flex;
+    padding: 45px;
+    gap: 25px;
+}
+ .texto_sobre_nosotros{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #ffffff; 
+    font-size: 28px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #646463;  
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px;  
+    border: 2px solid #5878ca;
+    text-indent: 1px ;
+}
+.empleados_banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* FLIP CARDS */
+.servicios div{
+    display: flex;
+    flex-wrap: wrap;  
+    margin: 5px;
+    justify-content: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 20px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 20px;
+    border: solid green 1px;
+  }
+  
+  .flip-card-front {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../img/flip_cards/formateo-pc-300x300.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .limpieza {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../FlipCard/flip_cards/limpieza-interna-pc-300x300.png);
+  }
+.actualizacion{
+
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../FlipCard/flip_cards/actualizacion-pc-300x300.png);
+}
+.instalacion_so{
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../FlipCard/flip_cards/instalacion-so-pc-300x300.png);
+}
+.baño_quimico{
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../FlipCard/flip_cards/baño-quimico300x300.png);
+}
+.almacenamiento_pc{
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../FlipCard/flip_cards/cambio-de-disco-rigido-300x300.png);
+    background-position: bottom;
+    background-size: 250px;
+}
+.pack_office{
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../FlipCard/flip_cards/office-pc-300x300.png);
+}
+
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(10, 133, 65);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip_titulo{
+      padding: 20px;
+    font-size: 25px;
+      color: #25aa6c;
+  }
