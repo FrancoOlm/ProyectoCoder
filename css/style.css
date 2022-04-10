@@ -419,8 +419,13 @@ footer a{
     cursor: pointer;
     border-radius: 15px;
 }
+.comprar:hover{
+    width: 85%;
+    background-color: #49cb17;
+    transition: .3s;
+    font-size:large;
+}
 .procesador_item{
-    /* border: solid blue; */
     width: 200px;
     height: 200px;
 }
