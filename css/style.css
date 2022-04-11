@@ -20,16 +20,17 @@ header{
 
 /* RESPONSIVE MENU */
 @media screen and (max-width:768px){
-
     footer{
         flex-direction: column;
-        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
     }
-    .redes{
-        margin: 0 20px;
+    .map_footer{
+        max-width: 100%;
+        max-height: 100%;
     }
-} 
-
+}
 body{
     background-color: #945c962a;
 }
@@ -110,88 +111,7 @@ h1{
 }
 /* TITULOS */
 
-
-/* HORARIOS UBICACION Y MEDIOS DE PAGO */
-.grid_container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 430px);
-    gap: 10px;
-    justify-content: space-around;
-    box-sizing: border-box;
-}
-.grid_item{
-    border-radius: 20px;
-    border: groove rgb(120, 128, 122);
-    background-color: #558c0d;
-    padding: 15px;
-    margin: 20px;
-    width: 400px;
-    height: 400px;
-    text-align: center;
-}
-.horarios_item{
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0 auto;
-}
-
-.horarios_item p{
-    font-size: 25px;
-    margin: 20px;
-    color: #f0f3f7;
-    font-weight: 100;
-    padding: 20px;
-}
-.grid_item .pagos_img{
-    max-width: 100%;
-    max-height: 100%;
-}
-.map{
-    border-radius: 30px;
-    width: 100%;
-    height: 100%;
-}
-/* HORARIOS UBICACION Y MEDIOS DE PAGO */
-
-/* PIE DE PAGINA-FOOTER */
-footer{
-    background-color: #62ac04;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-footer a{
-    text-decoration: none;
-    color: azure;
-}
-.copy{
-    text-align: center;
-    padding-top: 10px;
-    color: #f0f3f7;
-    font-weight: 100;
-}
-
-.redes{
-    display: block;
-    text-align: center;
-}
-/* PIE DE PAGINA-FOOTER */
-
 /* PAGINA GALERIA */
-.trabajos_terminados{
-    font-size: 30px;
-    border-radius: 20px;
-    margin: 20px;
-    border: groove rgb(120, 128, 122);
-    color: #f0f3f7;
-    font-weight: 100;
-    text-align: center;
-    background-color: #62ac04;
-    padding: 20px;
-}
 
 .galeria_container{
     display: grid;
@@ -230,7 +150,7 @@ footer a{
 }
 
 .body_galeria{
-    background-color: #dfb838;
+    background-color: gray;
 }
 
 @media screen and (max-width:768px){
@@ -347,7 +267,6 @@ footer a{
     display: flex;
     width: 100%;
     height: 100%;
-    padding: 5px;
 }
 .productos_caja{
     padding: 10px;
@@ -357,27 +276,30 @@ footer a{
     gap: 15px;
 }
 .productos_menu{
+    display: flex;
     background-color: #2d8a09;
-    padding: 20px;
-    width: 250px;
+    width: 1000px;
     height: 400px;
     border-radius: 20px;
+    margin: 10px 5px;
 }
-.menu_item ul{
+.productos_menu ul{
+    margin: 20px;
+    padding: 0;
     background-color: #2d8a09;
-    display: flex;
-    flex-direction: column;
 }
-.menu_item li{
-    padding-top: 20px;
+.productos_menu li{
+    width: 100%;
     list-style-type: none;
     border-bottom: #cbcdd1 solid 1px;
 }
-.menu_item li a{
+.productos_menu li a{
     text-decoration: none;
     color: rgb(223, 219, 219);
     font-size: 23px;
-    padding: 5px
+}
+.menu_icon{
+    font-size: 30px;
 }
 .procesador_container{
     background-color: #fefefe;
@@ -463,11 +385,8 @@ footer a{
 }
 
 /* PAGINA SOBRE NOSOTROS */
-
-.nosotros_conteiner{
-    display: flex;
-    padding: 45px;
-    gap: 25px;
+.nosotros_container{
+    margin-top: 15px;
 }
  .texto_sobre_nosotros{
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
@@ -504,8 +423,6 @@ footer a{
     perspective: 1000px;
     border-radius: 20px;
   }
-  
-  /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -514,13 +431,9 @@ footer a{
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
-  
-  /* Position the front and back side */
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -530,7 +443,6 @@ footer a{
     border-radius: 20px;
     border: solid green 1px;
   }
-  
   .flip-card-front {
     background-color: rgba(0, 0, 0, 0);
     background-image: url(../img/flip_cards/formateo-pc-300x300.png);
@@ -577,6 +489,78 @@ footer a{
       color: #25aa6c;
   }
 .marcas{
-    width: 90%;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
+    padding: 55px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.footer_fix{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
+footer{
+    background-color: #62AC04;
+    display: flex;
+    padding: 15px;
+    margin-top: 20px;
+    color: white;
+    justify-content: space-between;
+}
+.texto_footer{
+    padding: 20px 0px;
+    margin: 0 45px;
+   
+}
+.texto_footer p{
+    font-size: 18px;
+}
+.map_container_footer{
+    padding: 20px 0px;
+    margin: 0 45px;
+}
+.map_footer{
+    padding: 5px 0px;
+    width: 700px;
+    height: 400px;
+    border-radius: 22px;
+}
+.icon_footer{
+    margin: 0px 3px;
+    font-size: 35px;
+    color: rgb(43, 43, 43);
+}
+.pagos_icon{
+    color: rgb(247, 247, 247);
+}
+.icon_footer:hover{
+    color:#62AC04;
+}
+.redes_container{
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+.medios_de_pago_footer{
+    font-size: 35px;
+}
+.bajo_footer{
+    background-color: #646463;
+    color: white;
+    justify-content: space-between;
+    display: flex;
+}
+.bajo_footer p{
+    margin: 0px 5px;
+}
+.enlaces_container a{
+    text-decoration: none;
 }
