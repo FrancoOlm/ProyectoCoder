@@ -16,6 +16,15 @@ header{
     font-size: 20px;
     margin: 0 4px;
 }
+.logo_nav:hover{
+    filter: blur(0.5px);
+    filter: saturate(5);
+    opacity: 0.8;
+    transition: 0.8s;
+    transform: rotate(360deg);
+
+    
+}
 
 
 /* RESPONSIVE MENU */
@@ -51,18 +60,18 @@ body{
 
 @media screen and (max-width:768px){
     .banner{
-        display: none;
+    display: none;
     }
     .banner_movil{
-        display: block;
-        height: 600px;  
+    display: block;
+    height: 600px;  
     }
     .caja_banner{
-       display:flex;
-       justify-content: center;
-       padding: 20px;
-       margin: 20px;
-       box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
     }
 }
 /* BANNER PRINCIPAL */
