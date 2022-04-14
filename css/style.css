@@ -22,22 +22,18 @@ header{
     opacity: 0.8;
     transition: 0.8s;
     transform: rotate(360deg);
-
-    
 }
-
-
 /* RESPONSIVE MENU */
 @media screen and (max-width:768px){
     footer{
-        flex-direction: column;
-        max-width: 100%;
-        text-align: center;
-        align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
     }
     .map_footer{
-        max-width: 100%;
-        max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     }
 }
 body{
@@ -56,6 +52,15 @@ body{
 }
 .banner{
     height: 344px;
+}
+.whatsapp_container{
+    position: fixed;
+    right: 5px;
+    top: 570px;
+}
+.whatsapp_container img:hover{
+    filter: brightness(1.2);
+    transform: scale(1.1);
 }
 
 @media screen and (max-width:768px){
@@ -126,7 +131,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 380px;
-    padding: 10px;
+    margin: 10px;
     grid-gap: 10px;
     box-sizing: border-box;
 }
@@ -163,6 +168,10 @@ h1{
 }
 
 @media screen and (max-width:768px){
+    .galeria_container{
+        margin: 35px;
+    }
+
     .galeria_container{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -207,7 +216,7 @@ h1{
 .encabezado_contacto div p{
     font-size: 18px;
 }
- .form_container  { 
+.form_container{ 
     color: rgb(247, 247, 247);
     width: 45%;
 }
@@ -225,16 +234,16 @@ h1{
     position: relative;
 }
 .form_container .form .form_input, .form_textarea{
-   background: rgba(205, 209, 203, 0.7); 
-   border: none;
-   outline: none;
-   border-bottom: 2px solid #ff851b;
-   width: 100%;
-   padding: 12px;
-   margin-bottom: 20px;
-   border-radius: 2px;
-   font-size: 14px;
-   color: white;
+    background: rgba(205, 209, 203, 0.7); 
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ff851b;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: white;
 }
 .flex_container_contacto .boton{
     width: 100%;
@@ -368,43 +377,42 @@ h1{
 }
 
 @media screen and (max-width:768px) {
- 
-    .productos_flex_container{
-        flex-direction: column;
-        max-width: 100%;
-        align-items: center;
-        text-align: center;
-        box-sizing: border-box;
+.productos_flex_container{
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
     }
-    .productos_menu{
-        display: inline-block;
-        text-align: center;
-        width: 100%;
-        height: 100%;
+.productos_menu{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
     }
     .productos_caja{
-        margin: 15px;
-        align-items: center;
-        text-align: center;
+    margin: 15px;
+    align-items: center;
+    text-align: center;
     }
     .procesador_container{
-        margin: 0 auto;
-        width: 410px;
+    margin: 0 auto;
+    width: 410px;
     }
 }
 
 /* PAGINA SOBRE NOSOTROS */
 .nosotros_container{
     margin-top: 15px;
+    max-width: 100%;
 }
- .texto_sobre_nosotros{
+.texto_sobre_nosotros{
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     color: #ffffff; 
     font-size: 28px; 
     font-weight: 400; 
     text-align: center; 
     background: #646463;  
-    padding: 20px; 
     border-radius: 35px 0px 35px 0px; 
     -moz-border-radius: 35px 0px 35px 0px;  
     border: 2px solid #5878ca;
@@ -416,7 +424,7 @@ h1{
     object-fit: cover;
     border-radius: 10px;
 }
-
+/* PAGINA SOBRE NOSOTROS */
 /* FLIP CARDS */
 .servicios div{
     display: flex;
@@ -431,19 +439,19 @@ h1{
     height: 300px;
     perspective: 1000px;
     border-radius: 20px;
-  }
-  .flip-card-inner {
+}
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  .flip-card:hover .flip-card-inner {
+}
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  .flip-card-front, .flip-card-back {
+}
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -451,17 +459,17 @@ h1{
     backface-visibility: hidden;
     border-radius: 20px;
     border: solid green 1px;
-  }
-  .flip-card-front {
+}
+.flip-card-front {
     background-color: rgba(0, 0, 0, 0);
     background-image: url(../img/flip_cards/formateo-pc-300x300.png);
     background-repeat: no-repeat;
     background-position: bottom;
-  }
-  .limpieza {
+}
+.limpieza {
     background-color: rgba(0, 0, 0, 0);
     background-image: url(../FlipCard/flip_cards/limpieza-interna-pc-300x300.png);
-  }
+}
 .actualizacion{
 
     background-color: rgba(0, 0, 0, 0);
@@ -487,16 +495,16 @@ h1{
 }
 
   /* Style the back side */
-  .flip-card-back {
+.flip-card-back {
     background-color: rgb(10, 133, 65);
     color: white;
     transform: rotateY(180deg);
-  }
-  .flip_titulo{
-      padding: 20px;
+}
+.flip_titulo{
+    padding: 20px;
     font-size: 25px;
-      color: #25aa6c;
-  }
+    color: #25aa6c;
+}
 .marcas{
     width: 100%;
     height: 100%;
@@ -525,7 +533,7 @@ footer{
 .texto_footer{
     padding: 20px 0px;
     margin: 0 45px;
-   
+
 }
 .texto_footer p{
     font-size: 18px;
