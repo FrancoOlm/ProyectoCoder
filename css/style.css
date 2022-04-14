@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 header{
     background-color: #62ac04;
     padding: 5px;
@@ -16,6 +15,9 @@ header{
     font-size: 20px;
     margin: 0 4px;
 }
+.navbar-dark .navbar-nav .nav-link:active{
+    color: rgba(25, 25, 26, 0.966);
+} 
 .logo_nav:hover{
     filter: blur(0.5px);
     filter: saturate(5);
@@ -58,6 +60,9 @@ body{
     right: 5px;
     top: 570px;
 }
+.whatsapp_container img{
+    width: 70px;
+}
 .whatsapp_container img:hover{
     filter: brightness(1.2);
     transform: scale(1.1);
@@ -95,7 +100,6 @@ h1{
     background-color: #62ac04;
     padding: 20px;
 }
-
 .marcas_titulo{
     font-size: 35px;
     display: inline-block;
@@ -109,7 +113,6 @@ h1{
     background-color: #62ac04;
     padding: 20px;
 }
-
 .titulo_pagos{
     font-size: 35px;
     display: inline-block;
@@ -126,7 +129,6 @@ h1{
 /* TITULOS */
 
 /* PAGINA GALERIA */
-
 .galeria_container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -146,23 +148,18 @@ h1{
     height: 100%;
     object-fit: cover;
 }
-
 .galleria_item:nth-child(1){
     grid-column-start: span 2;   
 }
-
 .galleria_item:nth-child(3){
     grid-column-start: span 2;
 }
-
 .galleria_item:nth-child(5){
     grid-column-start: span 2;
 }
-
 .galleria_item:nth-child(4){
     grid-row: span 2;
 }
-
 .body_galeria{
     background-color: gray;
 }
@@ -171,27 +168,22 @@ h1{
     .galeria_container{
         margin: 35px;
     }
-
     .galeria_container{
         grid-template-columns: repeat(1, 1fr);
     }
     .galleria_item:nth-child(1){
         grid-column-start: span 1;   
     }
-    
     .galleria_item:nth-child(3){
         grid-column-start: span 1;
     }
-    
     .galleria_item:nth-child(5){
         grid-column-start: span 1;
     }
-    
     .galleria_item:nth-child(4){
         grid-row: span 1;
     }
 }
-
 /* PAGINA GALERIA */
 
 /* PAGINA DE CONTACTO */
@@ -432,7 +424,6 @@ h1{
     margin: 5px;
     justify-content: center;
 }
-
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -493,8 +484,6 @@ h1{
     background-color: rgba(0, 0, 0, 0);
     background-image: url(../FlipCard/flip_cards/office-pc-300x300.png);
 }
-
-  /* Style the back side */
 .flip-card-back {
     background-color: rgb(10, 133, 65);
     color: white;
@@ -505,11 +494,26 @@ h1{
     font-size: 25px;
     color: #25aa6c;
 }
+/* END FLIP CARDS */
 .marcas{
     width: 100%;
     height: 100%;
     margin: 0 auto;
     padding: 55px;
+}
+.marcas_celular{
+    display: none;
+}
+@media screen and (max-width:768px){
+    .marcas{
+        display: none;
+    }
+    .marcas_celular{
+        display: inline-block;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+    }
 }
 
 html, body {
