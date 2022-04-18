@@ -1,0 +1,480 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  background-color: #62ac04;
+  padding: 5px;
+}
+
+header .navbar-collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header .navbar-dark .navbar-nav .nav-link {
+  color: #fafff5;
+  font-size: 20px;
+  margin: 0 4px;
+}
+
+header .navbar-dark .navbar-nav .nav-link:active {
+  color: rgba(25, 25, 26, 0.966);
+}
+
+header .logo_nav:hover {
+  -webkit-filter: blur(0.5px);
+          filter: blur(0.5px);
+  -webkit-filter: saturate(5);
+          filter: saturate(5);
+  opacity: 0.8;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+body {
+  background-color: #945c962a;
+}
+
+.caja_banner {
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.caja_banner .banner {
+  height: 344px;
+}
+
+.banner_movil {
+  display: none;
+}
+
+.whatsapp_container {
+  position: fixed;
+  right: 10px;
+  bottom: 25px;
+}
+
+.whatsapp_container img {
+  width: 70px;
+}
+
+.whatsapp_container img:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+h1 {
+  font-size: 35px;
+  display: inline-block;
+  border-radius: 20px;
+  margin: 20px;
+  border: groove #78807a;
+  color: #f0f3f7;
+  font-weight: 100;
+  display: block;
+  text-align: center;
+  background-color: #62ac04;
+  padding: 20px;
+}
+
+.marcas_titulo {
+  font-size: 35px;
+  display: inline-block;
+  border-radius: 20px;
+  margin: 20px;
+  border: groove #78807a;
+  color: #f0f3f7;
+  font-weight: 100;
+  display: block;
+  text-align: center;
+  background-color: #62ac04;
+  padding: 20px;
+}
+
+.servicios div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicios .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  border-radius: 20px;
+}
+
+.servicios .flip-card-back {
+  background-color: #0a8541;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.servicios .flip_titulo {
+  padding: 20px;
+  font-size: 25px;
+  color: #25aa6c;
+}
+
+.servicios .flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.servicios .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.servicios .flip-card-front {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../img/flip_cards/formateo-pc-300x300.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.servicios .flip-card-front, .servicios .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  border: solid green 1px;
+}
+
+.servicios .flip-card-front {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../img/flip_cards/formateo-pc-300x300.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.servicios .limpieza {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../FlipCard/flip_cards/limpieza-interna-pc-300x300.png);
+}
+
+.servicios .actualizacion {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../FlipCard/flip_cards/actualizacion-pc-300x300.png);
+}
+
+.servicios .instalacion_so {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../FlipCard/flip_cards/instalacion-so-pc-300x300.png);
+}
+
+.servicios .baño_quimico {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../FlipCard/flip_cards/baño-quimico300x300.png);
+}
+
+.servicios .almacenamiento_pc {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../FlipCard/flip_cards/cambio-de-disco-rigido-300x300.png);
+  background-position: bottom;
+  background-size: 250px;
+}
+
+.servicios .pack_office {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../FlipCard/flip_cards/office-pc-300x300.png);
+}
+
+.marcas {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 55px;
+}
+
+.marcas_celular {
+  display: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.footer_fix {
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+footer {
+  background-color: #62AC04;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  margin-top: 20px;
+  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .texto_footer {
+  padding: 20px 0px;
+  margin: 0 45px;
+}
+
+footer .texto_footer p {
+  font-size: 18px;
+}
+
+footer .texto_footer .medios_de_pago_footer {
+  font-size: 35px;
+}
+
+footer .texto_footer .medios_de_pago_footer .pagos_icon {
+  color: #f7f7f7;
+}
+
+footer .map_container_footer {
+  padding: 20px 0px;
+  margin: 0 45px;
+}
+
+footer .map_container_footer .map_footer {
+  padding: 5px 0px;
+  width: 700px;
+  height: 400px;
+  border-radius: 22px;
+}
+
+.redes_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 25px 0;
+}
+
+.redes_container .icon_footer {
+  margin: 0px 3px;
+  font-size: 35px;
+  color: #2b2b2b;
+}
+
+.redes_container .icon_footer:hover {
+  color: #62AC04;
+}
+
+.redes_container a {
+  text-decoration: none;
+}
+
+.bajo_footer {
+  background-color: #646463;
+  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bajo_footer p {
+  margin: 0px 5px;
+}
+
+/* MEDIAS */
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 25px;
+  }
+  .marcas_titulo {
+    font-size: 25px;
+  }
+  .titulo_pagos {
+    font-size: 25px;
+  }
+  .flip-card {
+    width: 330px;
+  }
+  .whatsapp_container {
+    position: fixed;
+    right: 5px;
+    bottom: 45px;
+  }
+  .whatsapp_container img {
+    width: 65px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .map_footer {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    display: none;
+  }
+  .banner_movil {
+    display: block;
+    height: 600px;
+  }
+  .caja_banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .galeria_container {
+    margin: 35px;
+  }
+  .galeria_container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .galleria_item:nth-child(1) {
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+  }
+  .galleria_item:nth-child(3) {
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+  }
+  .galleria_item:nth-child(5) {
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+  }
+  .galleria_item:nth-child(4) {
+    grid-row: span 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex_container_contacto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form_container {
+    width: 100%;
+  }
+  .banner_contacto {
+    width: 80%;
+    height: 80%;
+  }
+  .banner_contacto img {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .productos_flex_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .productos_menu {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .productos_caja {
+    margin: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .procesador_container {
+    margin: 0 auto;
+    width: 410px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .marcas {
+    display: none;
+  }
+  .marcas_celular {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */
