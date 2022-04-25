@@ -87,7 +87,7 @@ body{
 /* BANNER PRINCIPAL */
 
 /* TITULOS */
-h1{
+.titulo__index{
     font-size: 35px;
     display: inline-block;
     border-radius: 20px;
