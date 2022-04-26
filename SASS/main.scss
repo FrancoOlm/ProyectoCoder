@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 header{
     background-color:$colorPrimario;
@@ -42,10 +43,13 @@ body{
 .banner_movil{
     display: none;
 }
-.whatsapp_container{
+@mixin whatsapp {
     position: fixed;
     right: 10px;
     bottom: 25px;
+}
+.whatsapp_container{
+    @include whatsapp;
     img{
         width: 70px;
         &:hover{
@@ -54,8 +58,7 @@ body{
         }
     }
 }
-
-h1{
+.titulo__index{
     font-size: 35px;
     display: inline-block;
     border-radius: 20px;
@@ -65,21 +68,12 @@ h1{
     font-weight: 100;
     display: block;
     text-align: center;
-    background-color:$colorPrimario;
+    background-color: $colorPrimario;
     padding: 20px;
 }
 .marcas_titulo{
-    font-size: 35px;
-    display: inline-block;
-    border-radius: 20px;
-    margin: 20px;
-    border: groove rgb(120, 128, 122);
-    color: #f0f3f7;
-    font-weight: 100;
-    display: block;
-    text-align: center;
-    background-color:$colorPrimario;
-    padding: 20px;
+    @extend .titulo__index;
+    font-size: 45px;
 }
 .servicios{ 
         div{
@@ -199,7 +193,7 @@ footer{
     p{
         font-size: 18px
         }
-        .medios_de_pago_footer{
+    .medios_de_pago_footer{
             font-size: 35px;
             .pagos_icon{
             color: rgb(247, 247, 247);
@@ -213,10 +207,30 @@ footer{
             padding: 5px 0px;
             width: 700px;
             height: 400px;
-            border-radius: 22px;
+            border-radius: 21px;
         }
     }
 }
+/* MAP */
+$pagos-icon:(
+    masterc: rgb(228, 161, 36),
+    visa: rgba(0, 0, 255, 0.493),
+    paypal: rgb(197, 194, 194),
+);
+@each $nombre, $valor in $pagos-icon {
+    .pagos_icon_#{$nombre} {
+        color: $valor;
+    }
+}
+
+$colores:(
+    main:rgb(19, 109, 34)
+);
+.titulo__index{
+    background-color: map-get($map: $colores, $key: main ) ;
+}
+/* MAP */
+
 .redes_container{
     display: flex;
     flex-direction:column-reverse;
@@ -244,126 +258,4 @@ footer{
     margin: 0px 5px;
     }
 }
-/* MEDIAS */
-@media screen and (max-width:576px){
-    h1{
-        font-size: 25px;
-        }
-    .marcas_titulo{
-        font-size: 25px;
-        }
-    .titulo_pagos{
-        font-size: 25px;
-        }
-    .flip-card{
-        width: 330px;
-        }
-    .whatsapp_container{
-        position: fixed;
-        right: 5px;
-        bottom: 45px;
-        }
-    .whatsapp_container img{
-        width: 65px;
-        }
-    }
-@media screen and (max-width:768px){
-    footer{
-        flex-direction: column;
-        max-width: 100%;
-        text-align: center;
-        align-items: center;
-        }
-    .map_footer{
-        max-width: 100%;
-        max-height: 100%;
-        }
-    }
-@media screen and (max-width:768px){
-    .banner{
-        display: none;
-        }
-    .banner_movil{
-        display: block;
-        height: 600px;  
-        }
-    .caja_banner{
-        display:flex;
-        justify-content: center;
-        padding: 20px;
-        margin: 20px;
-        box-sizing: border-box;
-        }
-    }
-    @media screen and (max-width:768px){
-        .galeria_container{
-            margin: 35px;
-        }
-        .galeria_container{
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .galleria_item:nth-child(1){
-            grid-column-start: span 1;   
-        }
-        .galleria_item:nth-child(3){
-            grid-column-start: span 1;
-        }
-        .galleria_item:nth-child(5){
-            grid-column-start: span 1;
-        }
-        .galleria_item:nth-child(4){
-            grid-row: span 1;
-        }
-    }
-    @media screen and (max-width:768px){
-        .flex_container_contacto{
-            flex-direction: column;
-        }
-        .form_container{
-            width: 100%;
-        }
-        .banner_contacto {
-            width: 80%;
-            height: 80%;
-        }
-        .banner_contacto img{
-            margin-left: 50px;
-        }
-    }
-
-    @media screen and (max-width:768px) {
-        .productos_flex_container{
-            flex-direction: column;
-            max-width: 100%;
-            align-items: center;
-            text-align: center;
-            box-sizing: border-box;
-            }
-        .productos_menu{
-            display: inline-block;
-            text-align: center;
-            width: 100%;
-            height: 100%;
-            }
-            .productos_caja{
-            margin: 15px;
-            align-items: center;
-            text-align: center;
-            }
-            .procesador_container{
-            margin: 0 auto;
-            width: 410px;
-            }
-        }
-        @media screen and (max-width:768px){
-            .marcas{
-                display: none;
-            }
-            .marcas_celular{
-                display: inline-block;
-                max-width: 100%;
-                max-height: 100%;
-                margin: 0 auto;
-            }
-        }
-        
+@import "medias";
