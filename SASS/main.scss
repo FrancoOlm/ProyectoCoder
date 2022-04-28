@@ -55,25 +55,23 @@ body{
         &:hover{
         filter: brightness(1.2);
         transform: scale(1.1);
+        transition: 0.5s;
         }
     }
 }
 .titulo__index{
     font-size: 35px;
-    display: inline-block;
     border-radius: 20px;
     margin: 20px;
     border: groove rgb(120, 128, 122);
     color: #f0f3f7;
     font-weight: 100;
-    display: block;
     text-align: center;
     background-color: $colorPrimario;
     padding: 20px;
 }
 .marcas_titulo{
     @extend .titulo__index;
-    font-size: 45px;
 }
 .servicios{ 
         div{
@@ -211,26 +209,6 @@ footer{
         }
     }
 }
-/* MAP */
-$pagos-icon:(
-    masterc: rgb(228, 161, 36),
-    visa: rgba(0, 0, 255, 0.493),
-    paypal: rgb(197, 194, 194),
-);
-@each $nombre, $valor in $pagos-icon {
-    .pagos_icon_#{$nombre} {
-        color: $valor;
-    }
-}
-
-$colores:(
-    main:rgb(19, 109, 34)
-);
-.titulo__index{
-    background-color: map-get($map: $colores, $key: main ) ;
-}
-/* MAP */
-
 .redes_container{
     display: flex;
     flex-direction:column-reverse;

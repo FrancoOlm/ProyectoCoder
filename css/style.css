@@ -67,6 +67,7 @@ body{
 .whatsapp_container img:hover{
     filter: brightness(1.2);
     transform: scale(1.1);
+    transition: 0.5s;
 }
 
 @media screen and (max-width:768px){
@@ -114,18 +115,10 @@ body{
     background-color: #62ac04;
     padding: 20px;
 }
-.titulo_pagos{
-    font-size: 35px;
-    display: inline-block;
-    border-radius: 20px;
-    margin: 20px;
-    border: groove rgb(120, 128, 122);
-    color: #f0f3f7;
-    font-weight: 100;
-    display: block;
+.productos__titulo{
+    font-size: 30px;
     text-align: center;
-    background-color: #62ac04;
-    padding: 20px;
+    color: #f0f3f7;
 }
 /* TITULOS */
 
@@ -196,16 +189,14 @@ body{
     justify-content: space-around;
 }
 .encabezado_contacto{
-    font-size: 15px;
-    display: block;
+    font-size: 18px;
     border-radius: 20px;
     margin: 12px;
-    border: groove rgb(120, 128, 122);
     color: #f0f3f7;
     font-weight: 100;
     text-align: center;
     background-color: #62ac04;
-    padding: 10px;
+    padding: 3px;
 }
 .encabezado_contacto div p{
     font-size: 18px;
@@ -215,7 +206,7 @@ body{
     width: 45%;
 }
 .form_container .form{
-    background: rgba(0, 0, 0,.6);
+    background:#081613a6;
     width: 100%;
     height: 100%;
     border-radius: 15px;
@@ -223,7 +214,7 @@ body{
 }
 .form_container .form .form_label{
     display: block;
-    color: #ff851b;
+    color: #f0f3f7;
     font-size: 16px;
     position: relative;
 }
@@ -231,7 +222,7 @@ body{
     background: rgba(205, 209, 203, 0.7); 
     border: none;
     outline: none;
-    border-bottom: 2px solid #ff851b;
+    border-bottom: 3px solid #62ac04;
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -242,7 +233,7 @@ body{
 .flex_container_contacto .boton{
     width: 100%;
     outline: none;
-    background: #ff851b;
+    background: #62ac04;
     font-size: 16px;
     border: none;
     color: white;
@@ -281,8 +272,7 @@ body{
     height: 100%;
 }
 .productos_caja{
-    padding: 10px;
-    margin: 10px;
+    margin: 15px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -291,7 +281,7 @@ body{
     display: flex;
     background-color: #2d8a09;
     width: 1000px;
-    height: 400px;
+    height: 450px;
     border-radius: 20px;
     margin: 10px 5px;
 }

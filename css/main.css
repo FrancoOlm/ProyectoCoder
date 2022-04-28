@@ -74,24 +74,20 @@ body {
           filter: brightness(1.2);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .titulo__index, .marcas_titulo {
   font-size: 35px;
-  display: inline-block;
   border-radius: 20px;
   margin: 20px;
   border: groove #78807a;
   color: #f0f3f7;
   font-weight: 100;
-  display: block;
   text-align: center;
   background-color: #62ac04;
   padding: 20px;
-}
-
-.marcas_titulo {
-  font-size: 45px;
 }
 
 .servicios div {
@@ -270,24 +266,6 @@ footer .map_container_footer .map_footer {
   border-radius: 21px;
 }
 
-/* MAP */
-.pagos_icon_masterc {
-  color: #e4a124;
-}
-
-.pagos_icon_visa {
-  color: rgba(0, 0, 255, 0.493);
-}
-
-.pagos_icon_paypal {
-  color: #c5c2c2;
-}
-
-.titulo__index, .marcas_titulo {
-  background-color: #136d22;
-}
-
-/* MAP */
 .redes_container {
   display: -webkit-box;
   display: -ms-flexbox;
