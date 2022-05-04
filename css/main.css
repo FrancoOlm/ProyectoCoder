@@ -314,6 +314,7 @@ footer .map_container_footer .map_footer {
 
 .bajo_footer p {
   margin: 0px 5px;
+  padding: 5px;
 }
 
 @media screen and (max-width: 576px) {

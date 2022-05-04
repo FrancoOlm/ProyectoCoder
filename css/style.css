@@ -26,6 +26,19 @@ header{
     transition: 0.8s;
     transform: rotate(360deg);
 }
+.whatsapp_container{
+    position: fixed;
+    right: 10px;
+    bottom: 25px;
+}
+.whatsapp_container img{
+    width: 70px;
+}
+.whatsapp_container:hover{
+    filter: brightness(1.2);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 /* RESPONSIVE MENU */
 @media screen and (max-width:768px){
     footer{
@@ -592,6 +605,7 @@ footer{
     display: flex;
 }
 .bajo_footer p{
+    padding: 5px;
     margin: 0px 5px;
 }
 .enlaces_container a{
