@@ -42,79 +42,7 @@ header{
 body{
     background-color: #945c962a;
 }
-
-/* BANNER PRINCIPAL */
-.caja_banner{
-    display: block;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align:center;
-}
-.banner_movil{
-    display: none;
-}
-.banner{
-    height: 344px;
-}
-.whatsapp_container{
-    position: fixed;
-    right: 10px;
-    bottom: 25px;
-}
-.whatsapp_container img{
-    width: 70px;
-}
-.whatsapp_container img:hover{
-    filter: brightness(1.2);
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-@media screen and (max-width:768px){
-    .banner{
-    display: none;
-    }
-    .banner_movil{
-    display: block;
-    height: 600px;  
-    }
-    .caja_banner{
-    display:flex;
-    justify-content: center;
-    padding: 20px;
-    margin: 20px;
-    box-sizing: border-box;
-    }
-}
-/* BANNER PRINCIPAL */
-
 /* TITULOS */
-.titulo__index{
-    font-size: 35px;
-    display: inline-block;
-    border-radius: 20px;
-    margin: 20px;
-    border: groove rgb(120, 128, 122);
-    color: #f0f3f7;
-    font-weight: 100;
-    display: block;
-    text-align: center;
-    background-color: #62ac04;
-    padding: 20px;
-}
-.marcas_titulo{
-    font-size: 35px;
-    display: inline-block;
-    border-radius: 20px;
-    margin: 20px;
-    border: groove rgb(120, 128, 122);
-    color: #f0f3f7;
-    font-weight: 100;
-    display: block;
-    text-align: center;
-    background-color: #62ac04;
-    padding: 20px;
-}
 .productos__titulo{
     font-size: 30px;
     text-align: center;
@@ -204,6 +132,9 @@ body{
 .form_container{ 
     color: rgb(247, 247, 247);
     width: 45%;
+}
+::placeholder{
+    color: rgb(43, 41, 41);
 }
 .form_container .form{
     background:#081613a6;
@@ -419,11 +350,11 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
+    width: 100%;
     margin-top: 100px;
-   /*  border: solid blueviolet;  */
+    margin-bottom: 100px;
 }
 .perfil_container{
-    /* border: solid black; */
     display: flex;
     background-color: #85b9fd;
     width: 610px;
@@ -432,15 +363,18 @@ body{
     justify-content: center;
 }
 .descripcion_loritos{
-    margin-top: 15px;
+    width: 410px;
     font-size: 20px;
     color: #020000;
+    padding: 10px;
 }
 .perfil_foto{
-    padding: 30px;
+    margin-top: 10px;
+    padding: 10px;
 }
 .perfil_foto img{
-    width:200px;
+    width: 150px;
+    
 }
 .Cacatua{
     background-color: #e9ebec;
@@ -458,7 +392,7 @@ body{
     background-color:#ff99be ;
 }
 .caique{
-    background-color: #488311;
+    background-color: #5bb508;
 }
 .australiana{
     background-color: #61aa04;
@@ -468,7 +402,7 @@ body{
         flex-direction: column-reverse;
     }
     .texto_sobre_nosotros{
-        font-size: 3.5vw;
+        font-size: 20px;
         width: 100%;
     }
     .empleados_banner img{
@@ -487,6 +421,12 @@ body{
         text-align: center;
     }
     
+}
+@media screen and (max-width:1368px){
+    .personal_container{
+        justify-content: center;
+    }
+
 }
 /* PAGINA SOBRE NOSOTROS */
 /* FLIP CARDS */

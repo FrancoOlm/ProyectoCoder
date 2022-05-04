@@ -25,7 +25,7 @@ header .navbar-dark .navbar-nav .nav-link {
 }
 
 header .navbar-dark .navbar-nav .nav-link:active {
-  color: rgba(25, 25, 26, 0.966);
+  color: rgba(22, 22, 22, 0.966);
 }
 
 header .logo_nav:hover {
@@ -116,6 +116,10 @@ body {
   color: white;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+.servicios .flip-card-back p {
+  padding: 15px 15px 0px 15px;
 }
 
 .servicios .flip_titulo {
@@ -372,6 +376,13 @@ footer .map_container_footer .map_footer {
     margin: 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 500px) {
+  .banner_movil {
+    display: block;
+    height: auto;
   }
 }
 
