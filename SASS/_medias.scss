@@ -2,7 +2,7 @@
     h1{
         font-size: 25px;
         }
-    .marcas_titulo{
+    .marcas__titulo{
         font-size: 25px;
         }
     .titulo_pagos{
@@ -11,12 +11,12 @@
     .flip-card{
         width: 330px;
         }
-    .whatsapp_container{
+    .whatsapp__container{
         position: fixed;
         right: 5px;
         bottom: 45px;
         }
-    .whatsapp_container img{
+    .whatsapp__container img{
         width: 65px;
         }
     }
@@ -27,7 +27,7 @@
         text-align: center;
         align-items: center;
         }
-    .map_footer{
+    .map__footer{
         max-width: 100%;
         max-height: 100%;
         }
@@ -36,11 +36,11 @@
     .banner{
         display: none;
         }
-    .banner_movil{
+    .banner__movil{
         display: block;
         height: 600px;  
         }
-    .caja_banner{
+    .caja__banner{
         display:flex;
         justify-content: center;
         padding: 20px;
@@ -48,7 +48,7 @@
         box-sizing: border-box;
         }
 @media screen and (max-width:500px){
-    .banner_movil{
+    .banner__movil{
         display: block;
         height: auto;
     }
@@ -118,7 +118,7 @@
             .marcas{
                 display: none;
             }
-            .marcas_celular{
+            .marcas__celular{
                 display: inline-block;
                 max-width: 100%;
                 max-height: 100%;

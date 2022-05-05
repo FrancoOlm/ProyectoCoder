@@ -321,7 +321,7 @@ footer .map_container_footer .map__footer {
   h1 {
     font-size: 25px;
   }
-  .marcas_titulo {
+  .marcas__titulo {
     font-size: 25px;
   }
   .titulo_pagos {
@@ -330,12 +330,12 @@ footer .map_container_footer .map__footer {
   .flip-card {
     width: 330px;
   }
-  .whatsapp_container {
+  .whatsapp__container {
     position: fixed;
     right: 5px;
     bottom: 45px;
   }
-  .whatsapp_container img {
+  .whatsapp__container img {
     width: 65px;
   }
 }
@@ -352,7 +352,7 @@ footer .map_container_footer .map__footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  .map_footer {
+  .map__footer {
     max-width: 100%;
     max-height: 100%;
   }
@@ -362,11 +362,11 @@ footer .map_container_footer .map__footer {
   .banner {
     display: none;
   }
-  .banner_movil {
+  .banner__movil {
     display: block;
     height: 600px;
   }
-  .caja_banner {
+  .caja__banner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -381,7 +381,7 @@ footer .map_container_footer .map__footer {
 }
 
 @media screen and (max-width: 1200px) and (max-width: 500px) {
-  .banner_movil {
+  .banner__movil {
     display: block;
     height: auto;
   }
@@ -468,7 +468,7 @@ footer .map_container_footer .map__footer {
   .marcas {
     display: none;
   }
-  .marcas_celular {
+  .marcas__celular {
     display: inline-block;
     max-width: 100%;
     max-height: 100%;
