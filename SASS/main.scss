@@ -31,7 +31,7 @@ header{
 body{
     background-color:#945c962a;
 }
-.caja_banner{
+.caja__banner{
     display: block;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -40,7 +40,7 @@ body{
         height: 344px;
     }
 }
-.banner_movil{
+.banner__movil{
     display: none;
 }
 @mixin whatsapp {
@@ -48,7 +48,7 @@ body{
     right: 10px;
     bottom: 25px;
 }
-.whatsapp_container{
+.whatsapp__container{
     @include whatsapp;
     img{
         width: 70px;
@@ -70,7 +70,7 @@ body{
     background-color: $colorPrimario;
     padding: 20px;
 }
-.marcas_titulo{
+.marcas__titulo{
     @extend .titulo__index;
 }
 .servicios{ 
@@ -141,21 +141,21 @@ body{
         background-color: rgba(0, 0, 0, 0);
         background-image: url(../FlipCard/flip_cards/actualizacion-pc-300x300.png);
     }
-    .instalacion_so{
+    .instalacion__so{
         background-color: rgba(0, 0, 0, 0);
         background-image: url(../FlipCard/flip_cards/instalacion-so-pc-300x300.png);
     }
-    .baño_quimico{
+    .baño__quimico{
         background-color: rgba(0, 0, 0, 0);
         background-image: url(../FlipCard/flip_cards/baño-quimico300x300.png);
     }
-    .almacenamiento_pc{
+    .almacenamiento__pc{
         background-color: rgba(0, 0, 0, 0);
         background-image: url(../FlipCard/flip_cards/cambio-de-disco-rigido-300x300.png);
         background-position: bottom;
         background-size: 250px;
     }
-    .pack_office{
+    .pack__office{
         background-color: rgba(0, 0, 0, 0);
         background-image: url(../FlipCard/flip_cards/office-pc-300x300.png);
     }
@@ -166,7 +166,7 @@ body{
     margin: 0 auto;
     padding: 55px;
 }
-.marcas_celular{
+.marcas__celular{
     display: none;
 }
 
@@ -188,7 +188,7 @@ footer{
     margin-top: 20px;
     color: white;
     justify-content: space-between;
-    .texto_footer{
+    .texto__footer{
         padding: 20px 0px;
         margin: 0 45px;
     p{
@@ -204,7 +204,7 @@ footer{
     .map_container_footer{
         padding: 20px 0px;
         margin: 0 45px;
-        .map_footer{
+        .map__footer{
             padding: 5px 0px;
             width: 700px;
             height: 400px;
@@ -212,13 +212,13 @@ footer{
         }
     }
 }
-.redes_container{
+.redes__container{
     display: flex;
     flex-direction:column-reverse;
     align-items: center;
     justify-content: center;
     margin: 25px 0;
-    .icon_footer{
+    .icon__footer{
         margin: 0px 3px;
         font-size: 35px;
         color: rgb(43, 43, 43);
@@ -230,7 +230,7 @@ footer{
         text-decoration: none;
     }
 }
-.bajo_footer{
+.bajo__footer{
     background-color: #646463;
     color: white;
     justify-content: space-between;
